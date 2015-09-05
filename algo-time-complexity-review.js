@@ -9,21 +9,21 @@ function findMax(array){
   }
   return max; 
 }
-
+// linear
 
 /////////// Prompt 2 ///////////
 /////////// time complexity: 
 function contains(array, target){
   return array.indexOf(target) > -1;
 }
-
+// linear
 
 /////////// Prompt 3 ///////////
 /////////// time complexity: 
 function partialContains(array, target, start){
   return array.slice(start).indexOf(target) > -1;
 }
-
+// linear
 
 /////////// Prompt 4 ///////////
 /////////// time complexity: 
@@ -33,6 +33,7 @@ function square(array){
   }
   return array;
 }
+// constant, bc we only go up to 3 within the array
 
 /////////// Prompt 5 ///////////
 /////////// time complexity: 
@@ -46,8 +47,9 @@ function repeat(array){
   }
   return repeat; 
 }
-//what if we replace 10 with a parameter? 
-
+// linear
+// what if we replace 10 with a parameter? 
+// linear
 
 /////////// Prompt 6 ///////////
 /////////// time complexity: 
@@ -64,7 +66,7 @@ function gcf(num1, num2){
   }
   return 1;
 }
-
+// linear
 
 /////////// Prompt 7 ///////////
 /////////// time complexity: 
@@ -85,6 +87,7 @@ function countChar(string){
   }
   return counts;
 }
+// quadratic
 
 
 /////////// Prompt 8 ///////////
@@ -99,6 +102,7 @@ var factorial = function(num){
     return num * factorial(num-1);
   }
 }
+// LINEAR
 
 
 /////////// Prompt 9 ///////////
@@ -117,7 +121,7 @@ function tournament(players){
     return tournament(results);
   }
 }
-
+// linear
 
 
 /////////// Prompt 10 ///////////
@@ -139,6 +143,8 @@ function allPasswords(allowedChars, maxLength){
   findPassword([]);
   return results;
 }
+// quadratic
+
 
 
 /////////// Prompt 11 ///////////
@@ -207,10 +213,6 @@ function tournamentRedux(players){
     return tournament(results);
   }
 }
-
-
-
-
 
 
 
